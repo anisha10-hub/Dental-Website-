@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Modern Dental Clinic - Feedback Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+      .feedback-header {
+        background: linear-gradient(to right, #78ccdd, #7fd7ef9a);
+        padding: 30px 0;
+        margin-bottom: 40px;
+        border-radius: 5px;
+      }
+      
+      .feedback-title {
+        color: white;
+        font-weight: bold;
+      }
+      
+      .feedback-subtitle {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+      .rating-container {
+        margin-bottom: 2rem;
+      }
+      
+      .rating-stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+      
+      .rating-stars input {
+        display: none;
+      }
+      
+      .rating-stars label {
+        cursor: pointer;
+        font-size: 30px;
+        color: #ddd;
+        transition: 0.3s;
+        margin-right: 5px;
+      }
+      
+      .rating-stars label:hover,
+      .rating-stars label:hover ~ label,
+      .rating-stars input:checked ~ label {
+        color: #FFC107;
+      }
+      
+      .rating-label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        display: block;
+      }
+      
+      .aspect-rating {
+        margin-bottom: 1.5rem;
+      }
+      
+      .radio-item {
+        margin-right: 15px;
+        display: inline-block;
+      }
+      
+      .feedback-form-container {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        padding: 30px;
+        margin-bottom: 50px;
+      }
+      
+      .icon-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      
+      .icon-box {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(to right, #308494, #5ca9cf);
+        color: white;
+        font-size: 40px;
+        margin: 0 15px;
+        transition: transform 0.3s;
+      }
+      
+      .icon-box:hover {
+        transform: scale(1.1);
+      }
+      
+      .btn-gradient {
+        background: linear-gradient(to right, #308494, #5ca9cf);
+        border: none;
+        color: white;
+        transition: all 0.3s;
+      }
+      
+      .btn-gradient:hover {
+        background: linear-gradient(to right, #5ca9cf, #308494);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(48, 132, 148, 0.3);
+      }
+      
+      .form-control:focus {
+        border-color: #5ca9cf;
+        box-shadow: 0 0 0 0.2rem rgba(92, 169, 207, 0.25);
+      }
+      
+      .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #5ca9cf;
+        border-color: #308494;
+      }
+      
+      .satisfaction-emoji {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      body {
+    background-image: url('images/oik.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+    </style>
+  </head>
+  <body>
+ 
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div> <!-- .site-mobile-menu -->
+        
+        <div class="site-navbar-wrap" style="box-shadow: 2PX 2px 4px rgba(0, 0, 0, 0.1)">
+    
+          <div class="site-navbar-top">
+            <div class="container py-2">
+              <div class="row align-items-center">
+                <div class="col-6">
+               
+                  <a href="https://www.instagram.com/moderndentalclinicphagwara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex ml-auto">
+                    
+                    <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                      <span class="icon-phone mr-2"></span>
+                      <span class="d-none d-md-inline-block "style="text-shadow: 2px 2px 4px #FFFFFF; color: white;">79862-16497</span>
+                    </a>
+                    <a href="#" class="d-flex align-items-center">
+                      <span class="icon-envelope mr-2"></span>
+                      <span class="d-none d-md-inline-block" style="text-shadow: 2px 2px 4px #FFFFFF; color: white;">mdclinicphagwarapb@gmail.com</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="site-navbar">
+            <div class="container py-1">
+              <div class="row align-items-center">
+                <div class="col-2">
+    <h4 class="mb-0 site-logo" style="text-shadow: 2px 2px 4px #000000;"><a href="index.html"><strong>Dental Clinic Bhikhiwind</strong></a></h4>            </div>
+                <div class="col-10">
+                  <nav class="site-navigation text-right" role="navigation">
+                    <div class="container">
+                      <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+    
+                      <ul class="site-menu js-clone-nav d-none d-lg-block">
+                        <li><a href="contact.html">Book</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="FeedBack.html">Feedback</a></li>
+
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Main Content - Feedback Form -->
+    <div class="site-section" style="background:  linear-gradient(to right, #78ccdd, #7fd7ef9a);">
+
+        <div class="container">
+<br>        
+       <div class="feedback-header text-center" data-aos="fade-up" style="background-image: url('images/oik.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <h2 class="feedback-title" style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.2); padding: 10px; border-radius: 10px; display: inline-block;">PATIENT FEEDBACK</h2><br>
+
+<p class="feedback-subtitle" style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.2); padding: 10px; border-radius: 10px; display: inline-block;" ">We value your thoughts on your dental experience with us</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            
+            <div class="icon-row" data-aos="fade-up">
+              <div class="icon-box">
+                <span class="flaticon-tooth"></span>
+              </div>
+              <div class="icon-box">
+                <span class="flaticon-tooth-whitening"></span>
+              </div>
+              <div class="icon-box">
+                <span class="flaticon-tooth-pliers"></span>
+              </div>
+            </div>
+            
+            <div class="feedback-form-container" data-aos="fade-up">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d1e92cbf-7008-4ae8-8c0b-c3e250352acf" readonly>
+                
+                <div class="row form-group">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="font-weight-bold" for="fname">First Name</label>
+                    <input type="text" id="fname" class="form-control" placeholder="First Name" name="fname" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="font-weight-bold" for="lname">Last Name</label>
+                    <input type="text" id="lname" class="form-control" placeholder="Last Name" name="lname" required>
+                  </div>
+                </div>
+                
+                <div class="row form-group">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="font-weight-bold" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Phone Number" name="phone">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="font-weight-bold" for="email">Email</label> 
+                    <input type="email" id="email" class="form-control" placeholder="Email" name="email" required>
+                  </div>
+                </div>
+                
+                <div class="row form-group">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="font-weight-bold" for="visit-date">Date of Visit</label> 
+                    <input type="date" id="visit-date" class="form-control px-2" name="visit-date" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="font-weight-bold" for="treatment">Treatment Received</label> 
+                    <select name="treatment" id="treatment" class="form-control" required>
+                      <option value="">Select treatment</option>
+                      <option value="Dental exam">Dental exam</option>
+                      <option value="Dental emergency">Dental emergency</option>
+                      <option value="Teeth cleaning">Teeth cleaning</option>
+                      <option value="Teeth whitening">Teeth whitening</option>
+                      <option value="Extraction">Extraction</option>
+                      <option value="Trauma surgery">Trauma surgery</option>
+                      <option value="Laser filling">Laser filling</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <div class="rating-container">
+                      <label class="rating-label">How would you rate your overall experience?</label>
+                      <div class="rating-stars">
+                        <input type="radio" id="star5" name="overall-rating" value="5" required>
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="overall-rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="overall-rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="overall-rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="overall-rating" value="1">
+                        <label for="star1">★</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="aspect-rating">
+                      <label class="rating-label">Our dental facility cleanliness</label>
+                      <div>
+                        <div class="radio-item">
+                          <input type="radio" id="cleanliness1" name="cleanliness" value="Excellent" required>
+                          <label for="cleanliness1">Excellent</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="cleanliness2" name="cleanliness" value="Good">
+                          <label for="cleanliness2">Good</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="cleanliness3" name="cleanliness" value="Average">
+                          <label for="cleanliness3">Average</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="cleanliness4" name="cleanliness" value="Poor">
+                          <label for="cleanliness4">Poor</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="aspect-rating">
+                      <label class="rating-label">Staff friendliness and professionalism</label>
+                      <div>
+                        <div class="radio-item">
+                          <input type="radio" id="staff1" name="staff" value="Excellent" required>
+                          <label for="staff1">Excellent</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="staff2" name="staff" value="Good">
+                          <label for="staff2">Good</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="staff3" name="staff" value="Average">
+                          <label for="staff3">Average</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="staff4" name="staff" value="Poor">
+                          <label for="staff4">Poor</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="aspect-rating">
+                      <label class="rating-label">Wait time experience</label>
+                      <div>
+                        <div class="radio-item">
+                          <input type="radio" id="wait1" name="wait-time" value="Excellent" required>
+                          <label for="wait1">Excellent</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="wait2" name="wait-time" value="Good">
+                          <label for="wait2">Good</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="wait3" name="wait-time" value="Average">
+                          <label for="wait3">Average</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="wait4" name="wait-time" value="Poor">
+                          <label for="wait4">Poor</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="aspect-rating">
+                      <label class="rating-label">Quality of treatment</label>
+                      <div>
+                        <div class="radio-item">
+                          <input type="radio" id="quality1" name="quality" value="Excellent" required>
+                          <label for="quality1">Excellent</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="quality2" name="quality" value="Good">
+                          <label for="quality2">Good</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="quality3" name="quality" value="Average">
+                          <label for="quality3">Average</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" id="quality4" name="quality" value="Poor">
+                          <label for="quality4">Poor</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row form-group mt-4">
+                  <div class="col-md-12">
+                    <label class="font-weight-bold">How satisfied were you with your visit?</label>
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="radio-item">
+                        <input type="radio" id="satisfaction1" name="satisfaction" value="Very Satisfied" required>
+                        <label for="satisfaction1"><span class="satisfaction-emoji">😃</span> Very Satisfied</label>
+                      </div>
+                      <div class="radio-item">
+                        <input type="radio" id="satisfaction2" name="satisfaction" value="Satisfied">
+                        <label for="satisfaction2"><span class="satisfaction-emoji">🙂</span> Satisfied</label>
+                      </div>
+                      <div class="radio-item">
+                        <input type="radio" id="satisfaction3" name="satisfaction" value="Neutral">
+                        <label for="satisfaction3"><span class="satisfaction-emoji">😐</span> Neutral</label>
+                      </div>
+                      <div class="radio-item">
+                        <input type="radio" id="satisfaction4" name="satisfaction" value="Dissatisfied">
+                        <label for="satisfaction4"><span class="satisfaction-emoji">🙁</span> Dissatisfied</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row form-group mt-4">
+                  <div class="col-md-12">
+                    <label class="font-weight-bold" for="improvements">What could we improve?</label> 
+                    <textarea name="improvements" id="improvements" cols="30" rows="4" class="form-control" placeholder="Please share your suggestions for improvement..."></textarea>
+                  </div>
+                </div>
+                
+                <div class="row form-group mt-4">
+                  <div class="col-md-12">
+                    <label class="font-weight-bold" for="comments">Additional Comments</label> 
+                    <textarea name="comments" id="comments" cols="30" rows="4" class="form-control" placeholder="Share any additional thoughts or feedback..."></textarea>
+                  </div>
+                </div>
+                
+                <div class="row form-group mt-4">
+                  <div class="col-md-12">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="recommend" name="recommend" value="yes">
+                      <label class="custom-control-label" for="recommend">I would recommend Modern Dental Clinic to friends and family</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row form-group mt-4">
+                  <div class="col-md-12">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="contact-permission" name="contact-permission" value="yes">
+                      <label class="custom-control-label" for="contact-permission">You may contact me about my feedback</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row form-group mt-4">
+                  <div class="col-md-12 text-center">
+                    <input type="submit" value="Submit Feedback" class="btn btn-primary btn-lg btn-gradient px-5">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="promo py-5" style="background:  #c30e0e;">
+      <div class="container text-center">
+        <span class="d-block h3 mb-3 font-weight-bold text-white">Promo For Tooth Cleaning from <del> ₹2000</del> now <strong class="font-weight-bold">₹1000</strong></span>
+        <div id="date-countdown" class="mt-0" data-countdown="2025/04/23"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="background:  #c30e0e;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Navigation</h3>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="about.html">About us </a></li>
+                  <li><a href="FeedBack.html">FeedBack </a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-2">FeedBack</h3>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="50719cd6-ed0a-42a2-86ef-968a37d16e1b" readonly>
+                <input type="hidden" name="success_url" value="https://your-website.com/success" readonly>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-white text-white bg-transparent" name="message" placeholder="Send FeedBack" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit" id="button-addon2">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Follow Us</h3>
+                <div>
+                  <a href="https://www.instagram.com/moderndentalclinicphagwara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p >
+                Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved to <a href="https://www.instagram.com/mann_3110_/?utm_source=ig_web_button_share_sheet" class="anisha" style="color: black; text-decoration:underline" ><strong>Mansimran</strong> & <a class="anisha" style="color: black;text-decoration:underline " href="https://www.instagram.com/anishagrewal8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><strong>Anisha</strong></a>
+                </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animation for star ratings
+      const stars = document.querySelectorAll('.rating-stars label');
+      stars.forEach(star => {
+        star.addEventListener('mouseover', function() {
+          // Add hover effect
+          this.style.transform = 'scale(1.2)';
+        });
+        
+        star.addEventListener('mouseout', function() {
+          // Remove hover effect
+          this.style.transform = 'scale(1)';
+        });
+      });
+      
+      // Form submission animation
+      const form = document.querySelector('form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic validation check
+        const required = form.querySelectorAll('[required]');
+        let valid = true;
+        required.forEach(field => {
+          if (!field.value) {
+            valid = false;
+          }
+        });
+        
+        if (valid) {
+          // Show success message
+          alert('Thank you for your valuable feedback! We appreciate your time.');
+          form.submit();
+        } else {
+          alert('Please fill in all required fields before submitting.');
+        }
+      });
+    });
+  </script>
+  </body>
+</html>
